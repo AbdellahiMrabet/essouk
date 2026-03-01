@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "السوق",
+    "web": {
+      "bundler": "metro",
+      "proxy": {
+        "/api": {
+          "target": "http://localhost:8081",
+          "changeOrigin": true
+        }
+      },
+      "favicon": "./assets/favicon.png"
+    },
+    "slug": "السوق",
+    "extra": {
+      "eas": {
+        "projectId": "c99d9f77-a402-4d7d-abcf-554a4a95e844"
+      }
+    },
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.krdevsolutions.arsouk",
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi": true,
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "WAKE_LOCK"
+      ]
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-notifications"
+    ],
+    "owner": "kr.abdallahi"
+  },
+  
+  "updates": {
+    "url": "https://u.expo.dev/c99d9f77-a402-4d7d-abcf-554a4a95e844"
+  },
+  "runtimeVersion": {
+    "policy": "appVersion"
+  }
+}
